@@ -23,6 +23,16 @@ exPath = os.path.join(exportParent, date)
 imPath = os.path.join(importParent, date)
 
 # functions
+def directory():
+  # export folder
+  if os.path.exists("export") == False:
+    os.mkdir("export")
+  if os.path.exists("import") == False:
+    os.mkdir("import")
+  menu()
+
+  
+
 def encoder():
   global path, time
   encodee = input("Enter the data you would like to encode: ")
